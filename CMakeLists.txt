@@ -30,8 +30,8 @@ find_package(catkin REQUIRED
 add_message_files(
     FILES
         RadarData.msg
-	   ParsedCAN.msg
-       TruckData.msg
+	    ParsedCAN.msg
+        TruckData.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -59,7 +59,7 @@ generate_messages(
 catkin_package(
     # INCLUDE_DIRS include
     # LIBRARIES can_msgs
-    CATKIN_DEPENDS sensor_msgs std_msgs
+    CATKIN_DEPENDS sensor_msgs std_msgs message_runtime
 #  DEPENDS system_lib
 )
 
